@@ -24,7 +24,7 @@ const replace = (file,data) =>{
 
 server = http.createServer((req,res)=>{
     if(req.url == '/'){
-        requests('http://api.openweathermap.org/data/2.5/weather?q=Pune&appid=42fd79392390d302a8e4de77c098d5ca')
+        requests('http://api.openweathermap.org/data/2.5/weather?q=Bangalore&appid=42fd79392390d302a8e4de77c098d5ca')
         .on('data', (chunk) =>{
         let newChunk = JSON.parse(chunk)
         // console.log(newChunk)
